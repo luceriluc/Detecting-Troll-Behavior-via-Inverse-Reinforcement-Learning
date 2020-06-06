@@ -1,6 +1,5 @@
 # Detecting-Troll-Behavior-via-Inverse-Reinforcement-Learning
-Code for the implementation of the approach presented in "Detecting Troll Behavior via Inverse Reinforcement Learning: A Case Study of Russian Trolls in the 2016 US Election" Luca Luceri, Silvia Giordano, and Emilio Ferrara. AAAI International Conference on Web and Social Media (ICWSM 2020). 
-https://arxiv.org/pdf/2001.10570.pdf
+Code for the implementation of the approach presented in "Detecting Troll Behavior via Inverse Reinforcement Learning: A Case Study of Russian Trolls in the 2016 US Election", by Luca Luceri, Silvia Giordano, and Emilio Ferrara, which has been accepted in the Proceedings of the AAAI International Conference on Web and Social Media (ICWSM 2020), https://arxiv.org/pdf/2001.10570.pdf
 
 This code allows to:
 1) estimate trolls' and generic users' incentives (i.e., rewards) via Inverse Reinforcement Learning (IRL) by launching "main_IRL.py".
