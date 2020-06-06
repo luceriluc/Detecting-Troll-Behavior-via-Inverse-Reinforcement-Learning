@@ -31,9 +31,9 @@ Each of these seven categories has to be grouped in a different csv file, which 
 Each csv file should include the following columns:
 
 - screen_name = screen_name of the tweet author 
-- text*	
-- created_at
-- id_str
+- text*	= tweet text
+- created_at = time of tweet creation 
+- id_str = tweet id
 - user_statuses_count = statuses_count of the author (i.e., screen_name)
 - user_followers_count*	= followers_count of the author (i.e., screen_name)
 - user_friends_count* = friends_count of the author (i.e., screen_name)
