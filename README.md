@@ -1,11 +1,12 @@
 # Detecting-Troll-Behavior-via-Inverse-Reinforcement-Learning
-Script for the implementation of the approach presented in "Detecting Troll Behavior via Inverse Reinforcement Learning: A Case Study of Russian Trolls in the 2016 US Election" by Luca Luceri, Silvia Giordano, Emilio Ferrara.
+Code for the implementation of the approach presented in "Detecting Troll Behavior via Inverse Reinforcement Learning: A Case Study of Russian Trolls in the 2016 US Election" Luca Luceri, Silvia Giordano, and Emilio Ferrara. AAAI International Conference on Web and Social Media (ICWSM 2020). 
+https://arxiv.org/pdf/2001.10570.pdf
 
 This code allows to:
 1) estimate trolls' and generic users' incentives (i.e., rewards) via Inverse Reinforcement Learning (IRL) by launching "main_IRL.py".
 2) classify trolls and users based on the rewards estimated with "main_IRL.py" by running "classifier.py".
 
-In particular, "main_IRL.py" estimate trolls' (resp. users') rewards in Twitter via the following IRL approaches (implemented by Matthew Alger, 2015):
+In particular, "main_IRL.py" estimate trolls' (resp. users') rewards in Twitter via the following IRL approaches (implemented by Matthew Alger: https://github.com/MatthewJA/Inverse-Reinforcement-Learning):
 - Maximum Entropy IRL (Ziebart et al., 2008)
 - Deep Maximum Entropy IRL (Wulfmeier et al., 2015)
 
@@ -29,9 +30,6 @@ The latter class (passively involved tweets) is used to create the STATES of the
 
 Each of these seven categories has to be grouped in a different csv file, which will be used as an input for "main_IRL.py".
 Each csv file should include the following columns:
-
-retweet_count,favorite_count,lang,hashtags,user_mentions,quoted_status_id,user_id,user_screen_name,
-rt_id,rt_coordinates,rt_created_at,rt_in_reply_to_status_id,rt_in_reply_to_user_id,rt_lang,rt_favourite_count,rt_user_id,rt_user_screen_name,rt_user_followers_count,rt_user_friends_count,rt_user_favourites_count
 
 - screen_name = screen_name of the tweet author 
 - text*	
